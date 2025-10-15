@@ -1,5 +1,5 @@
 {
-    "name": "malahierba-lab/chile-rut",
+    "name": "joosweb/chile-rut",
     "description": "Librería Laravel para el manejo y validación de RUT chileno compatible con Laravel 11",
     "keywords": ["rut", "chile", "laravel"],
     "license": "MIT",
