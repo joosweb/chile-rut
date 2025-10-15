@@ -1,22 +1,32 @@
 {
     "name": "malahierba/chile-rut",
-    "description": "Librería Laravel para el manejo y validación de RUT chileno",
+    "description": "Librería Laravel para el manejo y validación de RUT chileno compatible con Laravel 11",
     "keywords": ["rut", "chile", "laravel"],
-    "license" : "MIT",
+    "license": "MIT",
     "authors": [
         {
-            "name": "malahierba team",
-            "email": "lab@malahierba.cl",
-            "homepage": "http://malahierba.cl"
+            "name": "AssetPlan Team (based on malahierba-lab)",
+            "email": "dev@assetplan.cl",
+            "homepage": "https://github.com/AssetPlan/chile-rut"
         }
     ],
     "require": {
-        "php": ">=7.0.0",
-        "laravel/framework": "^6.0"
+        "php": "^8.0",
+        "illuminate/support": "^8.0|^9.0|^10.0|^11.0"
     },
     "autoload": {
         "psr-4": {
             "Malahierba\\ChileRut\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Malahierba\\ChileRut\\ChileRutServiceProvider"
+            ],
+            "aliases": {
+                "ChileRut": "Malahierba\\ChileRut\\Facades\\ChileRut"
+            }
         }
     }
 }
